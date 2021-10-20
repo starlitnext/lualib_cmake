@@ -1,0 +1,17 @@
+cmake_minimum_required (VERSION 3.10)
+
+project("lualib")
+
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
+
+# set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
+# set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+
+set(SRC_DIR ${PROJECT_SOURCE_DIR}/src)
+message("src dir: ${SRC_DIR}")
+
+add_subdirectory(src/lua)
+add_subdirectory(src/testmod)
+add_subdirectory(src/demos)
