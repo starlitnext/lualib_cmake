@@ -12,6 +12,4 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
 set(SRC_DIR ${PROJECT_SOURCE_DIR}/src)
 message("src dir: ${SRC_DIR}")
 
-add_subdirectory(src/lua)
-add_subdirectory(src/testmod)
-add_subdirectory(src/demos)
+add_subdirectory(src)

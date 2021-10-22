@@ -2,7 +2,9 @@
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
     "files.associations": {
         "cmath": "cpp",
-        "lua.h": "c"
+        "lua.h": "c",
+        "lua_utils.hpp": "c",
+        "platform.hpp": "c"
     },
     "cmake.configureArgs":["-DCMAKE_INSTALL_PREFIX=${workspaceFolder}/install"]
 }
